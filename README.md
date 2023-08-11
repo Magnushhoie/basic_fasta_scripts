@@ -1,4 +1,4 @@
-# biopython_fasta_scripts
+# basic_fasta_scripts
 This repository contains basic standalone scripts for processing FASTA files in various ways using Biopython. Below are brief descriptions and usage examples for each script:
 
 Usage:
