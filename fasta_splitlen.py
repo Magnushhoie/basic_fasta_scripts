@@ -9,7 +9,7 @@ def cmdline_args():
     # Make parser object
     usage = f"""
     Usage:
-        python fasta_splitlen.py input_file --lengths "LENGTHS"
+        python fasta_splitlen.py <input.fasta> --lengths "LENGTHS"
 
     Description:
         Split a FASTA file based on sequence length. Sequences are distributed into buckets based 

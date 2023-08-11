@@ -8,11 +8,10 @@ def cmdline_args():
     # Make parser object
     usage = f"""
     Usage:
-        python fasta_splitevery.py input_file --count COUNT
+        python fasta_splitevery.py <input.fasta> --count COUNT
 
     Description:
         Splits a FASTA file into multiple smaller files, each containing a specified number of sequences.
-
 
     Examples:
         # Split off at every 5 entries
@@ -68,9 +67,9 @@ def main():
     # Split sequences and write to files
     for i in range(0, len(sequences), args.count):
         write_fasta_entries(
-            sequences[i:i + args.count],
+            sequences[i : i + args.count],
             filename=f"{base_name}_{i}-{i + args.count}.fasta",
-        )   
+        )
 
 
 if __name__ == "__main__":
